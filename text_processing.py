@@ -58,6 +58,6 @@ def no_vowels(input_string):
             >>> tp.normalize(input_string2)
             ''W lv Pythn!'
     """
-    no_vowel_string = "".join(map(lambda x: "" if x in (
-        "a", "e", "i", "o", "u") else x, input_string))
+    no_vowel_string = "".join(
+        map(lambda x: "" if x in "aeiouAEIOU" else x, input_string))
     return no_vowel_string
